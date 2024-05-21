@@ -14,6 +14,17 @@
         #Charlie_Parker_Image{
           float: right;
         }
+        #jazz_button{
+          background: #F4BA00;
+          border-radius: 10px;
+          padding: 2px;
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #jazz_button:hover{
+          background: #DDD;
+          
+        }
         .media_box{
           border-radius: 10px;
           padding: 2px;
@@ -75,13 +86,14 @@
   </head>
   <body id ="body">
       <div class = "audio_player">
-        <button>
-          <img src = "next_song.png">
+        <button id = "jazz_button">
+          Listen to Jazz!
         </button>
-        <audio controls>
-          <source src = "take_five.mp3" type = "audio/mpeg">
-          <source src = "take_five.mp3" type = "audio/mpeg">
-        </audio>
+        <div id = "take_five">
+          <audio controls>
+            <source src = "take_five.mp3" type = "audio/mpeg">
+          </audio>
+        </div>
       </div>
   
     <div id = "main_title">
