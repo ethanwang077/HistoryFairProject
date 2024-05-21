@@ -80,7 +80,27 @@
           right: 0;
         }
     </style>
-   
+    <script>
+      /*const footprints = document.getElementById("footprints");
+      const song_for_my_father = document.getElementById("song_for_my_father");
+      const st_thomas = document.getElementById("st_thomas");
+      const autumn_leaves = document.getElementById("autumn_leaves");
+      const c_jam_blues = document.getElementById("c-jam_blues");
+      const blue_bossa = document.getElementById("blue_bossa");
+      const nows_the_time = document.getElementById("nows_the_time");*/
+
+      const songs = [document.getElementById("footprints"), document.getElementById("song_for_my_father"), document.getElementById("st_thomas"),  document.getElementById("autumn_leaves"), document.getElementById("c-jam_blues"), document.getElementById("blue_bossa"), document.getElementById("nows_the_time")];
+      function play_jazz{
+        var randint = Math.floor(Math.Random*8);
+        for(i = 0; i < 8 ; i ++){
+          if(i == randint){
+            songs[i].display.visibility("visible");
+          }else if (i != randint){
+            songs[i].display.visiblity("block");
+          }
+        }
+      }
+    </script>
   </head>
   <body id ="body">
       <div class = "audio_player">
@@ -203,27 +223,7 @@
         music history and shaped popular music as we know it today.
       </p>
     </div>
-   <script>
-      /*const footprints = document.getElementById("footprints");
-      const song_for_my_father = document.getElementById("song_for_my_father");
-      const st_thomas = document.getElementById("st_thomas");
-      const autumn_leaves = document.getElementById("autumn_leaves");
-      const c_jam_blues = document.getElementById("c-jam_blues");
-      const blue_bossa = document.getElementById("blue_bossa");
-      const nows_the_time = document.getElementById("nows_the_time");*/
-
-      const songs = [document.getElementById("footprints"), document.getElementById("song_for_my_father"), document.getElementById("st_thomas"),  document.getElementById("autumn_leaves"), document.getElementById("c-jam_blues"), document.getElementById("blue_bossa"), document.getElementById("nows_the_time")];
-      function play_jazz{
-        var randint = Math.floor(Math.Random*8);
-        for(i = 0; i < 8 ; i ++){
-          if(i == randint){
-            songs[i].display.visibility("visible");
-          }else if (i != randint){
-            songs[i].display.visiblity("hidden");
-          }
-        }
-      }
-    </script>
+   
   </body>
 </html>
 
