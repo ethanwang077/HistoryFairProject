@@ -80,30 +80,7 @@
           right: 0;
         }
     </style>
-    <script>
-      const footprints = document.getElementById("footprints");
-      const song_for_my_father = document.getElementById("song_for_my_father");
-      const st_thomas = document.getElementById("st_thomas");
-      const autumn_leaves = document.getElementById("autumn_leaves");
-      const c_jam_blues = document.getElementById("c-jam_blues");
-      const blue_bossa = document.getElementById("blue_bossa");
-      const nows_the_time = document.getElementById("nows_the_time");
-
-      const songs = [footprints, song_for_my_father, st_thomas, autumn_leaves, c_jam_blues, blue_bossa, nows_the_time]
-      for(i = 0; i < 8 ; i ++){
-        song[i].display.visibility("hidden");
-      }
-      function play_jazz{
-        var randint = Math.floor(Math.Random*8);
-        for(i = 0; i < 8 ; i ++){
-          if(i == randint){
-            songs[i].display.visibility("visible");
-          }else if (i != randint){
-            songs[i].display.visiblity("hidden");
-          }
-        }
-      }
-    </script>
+   
   </head>
   <body id ="body">
       <div class = "audio_player">
@@ -226,6 +203,30 @@
         music history and shaped popular music as we know it today.
       </p>
     </div>
+   <script>
+      const footprints = document.getElementById("footprints");
+      const song_for_my_father = document.getElementById("song_for_my_father");
+      const st_thomas = document.getElementById("st_thomas");
+      const autumn_leaves = document.getElementById("autumn_leaves");
+      const c_jam_blues = document.getElementById("c-jam_blues");
+      const blue_bossa = document.getElementById("blue_bossa");
+      const nows_the_time = document.getElementById("nows_the_time");
+
+      const songs = [footprints, song_for_my_father, st_thomas, autumn_leaves, c_jam_blues, blue_bossa, nows_the_time]
+      for(i = 0; i < 8 ; i ++){
+        song[i].display.visibility("hidden");
+      }
+      function play_jazz{
+        var randint = Math.floor(Math.Random*8);
+        for(i = 0; i < 8 ; i ++){
+          if(i == randint){
+            songs[i].display.visibility("visible");
+          }else if (i != randint){
+            songs[i].display.visiblity("hidden");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
 
