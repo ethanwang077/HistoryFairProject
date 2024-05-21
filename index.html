@@ -87,25 +87,25 @@
         <button id = "jazz_button" onclick = "play_jazz">
           shuffle
         </button>
-        <audio controls id = "footprints">
+        <audio controls id = "footprints" style = "display: hidden">
           <source src = "footprints.mp3" type = "audio/mpeg">
         </audio>
-        <audio controls id = "song_for_my_father">
+        <audio controls id = "song_for_my_father" style = "display: hidden">
           <source src = "song_for_my_father.mp3" type = "audio/mpeg">
         </audio>
-        <audio controls id = "st_thomas">
+        <audio controls id = "st_thomas" style = "display: hidden">
           <source src = "st_thomas.mp3" type = "audio/mpeg">
         </audio>
-        <audio controls id = "autumn_leaves">
+        <audio controls id = "autumn_leaves" style = "display: hidden">
           <source src = "autumn_leaves.mp3" type = "audio/mpeg">
         </audio>
-        <audio controls id = "c-jam_blues">
+        <audio controls id = "c-jam_blues" style = "display: hidden">
           <source src = "c-jam_blues.mp3" type = "audio/mpeg">
         </audio>
-        <audio controls id = "blue_bossa">
+        <audio controls id = "blue_bossa" style = "display: hidden">
           <source src = "blue_bossa.mp3" type = "audio/mpeg">
         </audio>
-        <audio controls id = "nows_the_time">
+        <audio controls id = "nows_the_time" style = "display: hidden">
           <source src = "nows_the_time.mp3" type = "audio/mpeg">
         </audio>
         </div>
@@ -204,18 +204,15 @@
       </p>
     </div>
    <script>
-      const footprints = document.getElementById("footprints");
+      /*const footprints = document.getElementById("footprints");
       const song_for_my_father = document.getElementById("song_for_my_father");
       const st_thomas = document.getElementById("st_thomas");
       const autumn_leaves = document.getElementById("autumn_leaves");
       const c_jam_blues = document.getElementById("c-jam_blues");
       const blue_bossa = document.getElementById("blue_bossa");
-      const nows_the_time = document.getElementById("nows_the_time");
+      const nows_the_time = document.getElementById("nows_the_time");*/
 
-      const songs = [footprints, song_for_my_father, st_thomas, autumn_leaves, c_jam_blues, blue_bossa, nows_the_time]
-      for(i = 0; i < 8 ; i ++){
-        song[i].display.visibility("hidden");
-      }
+      const songs = [document.getElementById("footprints"), document.getElementById("song_for_my_father"), document.getElementById("st_thomas"),  document.getElementById("autumn_leaves"), document.getElementById("c-jam_blues"), document.getElementById("blue_bossa"), document.getElementById("nows_the_time")];
       function play_jazz{
         var randint = Math.floor(Math.Random*8);
         for(i = 0; i < 8 ; i ++){
